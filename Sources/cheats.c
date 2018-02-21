@@ -537,22 +537,20 @@ void	itemWheel(void)
 	unsigned int g_raceCondition = GetRaceCondition(), g_itemPointer = GetItemPointer();
 	if (g_raceCondition == 1 && g_itemPointer > 0x14000000 && g_itemPointer < 0x18000000)
 	{
-		if (is_pressed(X))
-			writeItem(9);
-		if (is_pressed(Y))
-			writeItem(13);
-		if (is_pressed(ST))
-			writeItem(6);
-		if (is_pressed(SE))
-			writeItem(10);
-		if (is_pressed(DL))
-			writeItem(14);
-		if (is_pressed(DR))
-			writeItem(2);
-		if (is_pressed(DD))
-			writeItem(4);
-		if (is_pressed(DU))
-			writeItem(1);
+		if (is_pressed(0x40))
+			writeItem(0x8);
+		if (is_pressed(0x10))
+			writeItem(0xA);
+		if (is_pressed(0x80))
+			writeItem(0x4);
+		if (is_pressed(0x20))
+			writeItem(0x6);
+		if (is_pressed(0x200))
+			writeItem(0xC);
+		if (is_pressed(0x8))
+			writeItem(0x10);
+		if (is_pressed(0x4))
+			writeItem(0xF);
 	}
 }
 
